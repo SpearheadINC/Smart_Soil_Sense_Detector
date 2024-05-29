@@ -15,7 +15,7 @@ Capacitive_Soil_Moisture_Sensor_SKU_SEN0193-DFRobot 459
 This Arduino Analog capacitive soil Moisture Sensor measures soil moisture levels by capacitive sensing, rather than resistive sensing like other types of moisture sensor. It is made of a corrosion-resistant material giving it a long service.
 
 How to calibrate the soil moisture sensor
-
+```
 void setup() {
   Serial.begin(9600); // open serial port, set the baud rate as 9600 bps
 }
@@ -25,7 +25,7 @@ void loop() {
   Serial.println(val); //print the value to serial port
   delay(100);
 }
-
+```
 Hardware setup
 Steps:		
 1.	Connect the Soil Moisture Sensor:
@@ -58,7 +58,7 @@ Software setup
    - Copy and paste the following code into the sketch:
 
 cpp code.
-
+```
 #include <DHT.h>
 
 #define DHTPIN 2      // Pin connected to the DHT11 sensor
@@ -101,7 +101,7 @@ void loop() {
 
   delay(2000); // Wait for 2 seconds before the next reading
 }
-
+```
 #Explanation
 •	DHT11 Sensor: Reads temperature and humidity data.
 •	Capacitive Soil Moisture Sensor: Reads soil moisture levels.
