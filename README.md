@@ -102,40 +102,61 @@ void loop() {
   delay(2000); // Wait for 2 seconds before the next reading
 }
 ```
-#Explanation
-•	DHT11 Sensor: Reads temperature and humidity data.
-•	Capacitive Soil Moisture Sensor: Reads soil moisture levels.
-•	Arduino Code: Reads data from both sensors and prints the values to the Serial Monitor every 2 seconds.
+# Explanation
 
-#Upload the Code:
-  -Connect your Arduino Uno to your computer using the USB cable.
-  -Select the appropriate board and port from the Tools menu.
-  -Click on the Upload button to upload the code to your Arduino Uno.
-  
-#Code Explanation
-#Libraries Included:
-  dht.h: Library to interface with the DHT11 sensor.
-#Pin Definitions: -#define DHT11_PIN 2: Sets digital pin 2 for the DHT11 sensor.
-                  -int soilMoisturePin = A0: Sets analog pin A0 for the soil moisture sensor.
-#Setup Function: -Initializes the serial communication at a baud rate of 9600.
-                -Prints an initial message to the serial monitor.
-#Loop Function:
-              Reads data from the DHT11 sensor and prints temperature and humidity values to the serial monitor.
-              Reads the soil moisture level from the soil moisture sensor and prints the value to the serial monitor.
-              Waits for 2 seconds before repeating the loop.
-#Troubleshooting
-DHT11 Sensor Reading Issues:
-  -Ensure the connections are correct.
-  -Check if the sensor is faulty by trying another DHT11 sensor.
-Soil Moisture Sensor Reading Issues:
-  -Ensure the sensor is properly inserted into the soil.
-  -Check for any loose connections.
-General Issues:
-  -Ensure the Arduino is properly connected to the computer.
-  -Check for any error messages in the Arduino IDE and resolve them.
-  
-Contributing
-We welcome contributions from the community. If you have any suggestions or improvements, please create a pull request or open an issue.
+- **DHT11 Sensor**: Reads temperature and humidity data.
+- **Capacitive Soil Moisture Sensor**: Reads soil moisture levels.
+- **Arduino Code**: Reads data from both sensors and prints the values to the Serial Monitor every 2 seconds.
 
-License
+# Upload the Code
+
+1. Connect your Arduino Uno to your computer using the USB cable.
+2. Select the appropriate board and port from the Tools menu.
+3. Click on the Upload button to upload the code to your Arduino Uno.
+
+# Code Explanation
+
+## Libraries Included
+
+- **dht.h**: Library to interface with the DHT11 sensor.
+
+## Pin Definitions
+
+- `#define DHT11_PIN 2`: Sets digital pin 2 for the DHT11 sensor.
+- `int soilMoisturePin = A0`: Sets analog pin A0 for the soil moisture sensor.
+
+## Setup Function
+
+- Initializes the serial communication at a baud rate of 9600.
+- Prints an initial message to the serial monitor.
+
+## Loop Function
+
+- Reads data from the DHT11 sensor and prints temperature and humidity values to the serial monitor.
+- Reads the soil moisture level from the soil moisture sensor and prints the value to the serial monitor.
+- Waits for 2 seconds before repeating the loop.
+
+# Troubleshooting
+
+## DHT11 Sensor Reading Issues
+
+- Ensure the connections are correct.
+- Check if the sensor is faulty by trying another DHT11 sensor.
+
+## Soil Moisture Sensor Reading Issues
+
+- Ensure the sensor is properly inserted into the soil.
+- Check for any loose connections.
+
+## General Issues
+
+- Ensure the Arduino is properly connected to the computer.
+- Check for any error messages in the Arduino IDE and resolve them.
+
+# Contributions
+
+-If you have any suggestions or improvements, please create a pull request or open an issue.
+
+# License
+
 This project is licensed under the MIT License. See the LICENSE file for details.
